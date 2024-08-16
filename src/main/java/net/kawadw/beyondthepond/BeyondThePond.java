@@ -1,6 +1,7 @@
 package net.kawadw.beyondthepond;
 
 import net.kawadw.beyondthepond.registry.BTPCreativeTabs;
+import net.kawadw.beyondthepond.registry.BTPEntities;
 import net.kawadw.beyondthepond.registry.BTPItems;
 import net.kawadw.beyondthepond.registry.datagen.BTPItemModelProvider;
 import net.minecraft.data.DataGenerator;
@@ -30,6 +31,7 @@ public class BeyondThePond {
 
         BTPItems.register(modEventBus);
         BTPCreativeTabs.register(modEventBus);
+        BTPEntities.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
